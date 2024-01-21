@@ -9,9 +9,9 @@ burgerButton.addEventListener('click',()=>{
     headerNav.classList.toggle("open-list");
 });
 
-navLinks.forEach(link=>{
+navLinks.forEach((link) => {
    link.addEventListener('click', () => {
     burgerButton.classList.remove("open-btn");
-    navLinks.classList.add("open-list");
+    navLinks.classList.remove("open-list");
    });
 });
