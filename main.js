@@ -9,9 +9,10 @@ burgerButton.addEventListener('click',()=>{
     headerNav.classList.toggle("open-list");
 });
 
+///SET LIST TO CLOSE WHEN WE CLICK TO EVERY HEADER LINKS
 navLinks.forEach((link) => {
    link.addEventListener('click', () => {
     burgerButton.classList.remove("open-btn");
-    navLinks.classList.remove("open-list");
+    headerNav.classList.remove("open-list");
    });
 });
