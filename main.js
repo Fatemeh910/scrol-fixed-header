@@ -9,10 +9,19 @@ burgerButton.addEventListener('click',()=>{
     headerNav.classList.toggle("open-list");
 });
 
-///SET LIST TO CLOSE WHEN WE CLICK TO EVERY HEADER LINKS
+///SET LIST TO CLOSE WHEN WE CLICK TO EVERY HEADER LINKSمختص بستن لیست
 navLinks.forEach((link) => {
    link.addEventListener('click', () => {
     burgerButton.classList.remove("open-btn");
     headerNav.classList.remove("open-list");
    });
+});
+
+navLinks.forEach(link =>{
+    link.addEventListener('click', function (e) {
+     e.preventDefault();    
+
+     const targetId = this.getAttribute("href").substring(1);
+     console.log(targetId);
+    });
 });
