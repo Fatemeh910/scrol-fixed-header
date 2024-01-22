@@ -26,10 +26,10 @@ navLinks.forEach(link =>{
      const targetSection = document.getElementById(targetId);
 
 //GET HEADER HEIGEگرفتن ارتفاع هدر
-    const headerHeight = parseInt(window.getComputedStyle(header).height);
-    
+    const headerHeight = parseInt(window.getComputerStyle(header).height);
+
      window.scrollTo({
-      top : targetSection.offsetTop - headerHeight,
-     })
+      top: targetSection.offsetTop - headerHeight,
+     });
     });
 });
