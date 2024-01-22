@@ -21,11 +21,14 @@ navLinks.forEach(link =>{
     link.addEventListener('click', function (e) {
      e.preventDefault();    
 
+//GET CURENT SECTIONگرفتن سکشن فعلی
      const targetId = this.getAttribute("href").substring(1);
      const targetSection = document.getElementById(targetId);
 
+//GET HEADER HEIGEگرفتن ارتفاع هدر
+    const headerHeight = parseInt(window.getComputedStyle(header).height);
      window.scrollTo({
-      top : targetSection.offsetTop
+      top : targetSection.offsetTop ,
      })
     });
 });
