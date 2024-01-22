@@ -27,8 +27,9 @@ navLinks.forEach(link =>{
 
 //GET HEADER HEIGEگرفتن ارتفاع هدر
     const headerHeight = parseInt(window.getComputedStyle(header).height);
+    
      window.scrollTo({
-      top : targetSection.offsetTop ,
+      top : targetSection.offsetTop - headerHeight,
      })
     });
 });
