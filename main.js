@@ -26,10 +26,11 @@ navLinks.forEach(link =>{
      const targetSection = document.getElementById(targetId);
 
 //GET HEADER HEIGEگرفتن ارتفاع هدر
-    const headerHeight = parseInt(window.getComputerStyle(header).height);
-
+   const headerHeight = parseInt(window.getComputedStyle(header).height);
+//SCROLL TO SECTIN THAT WEاسکروا کن به سکشنی که روی لینکش کلیک کردیم
      window.scrollTo({
-      top: targetSection.offsetTop - headerHeight,
+        top: targetSection.offsetTop - headerHeight,
+        behavior: "smooth",
      });
     });
 });
