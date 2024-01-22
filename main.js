@@ -22,6 +22,10 @@ navLinks.forEach(link =>{
      e.preventDefault();    
 
      const targetId = this.getAttribute("href").substring(1);
-     console.log(targetId);
+     const targetSection = document.getElementById(targetId);
+
+     window.scrollTo({
+      top : targetSection.offsetTop
+     })
     });
 });
