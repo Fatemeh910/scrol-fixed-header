@@ -1,7 +1,7 @@
 const burgerButton = document.querySelector(".burger-btn-wrapper");
 const headerNav = document.querySelector(".header-nav");
 const navLinks = document.querySelectorAll(".nav-link");
-
+const header = document.querySelectorAll(".header");
 
 ///TOGLE NAVBAR MENu NEW WE ClICK BURGEr BURGER BUTON
 burgerButton.addEventListener('click',()=>{
